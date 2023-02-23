@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<body> <p style="text-align: end;">(using js Array Methods)</p>
+   <h2 style="text-align: center; color: tomato; text-decoration:underline;">Student Admission Portal</h2>
+ 
+    <p id="g"></p>
+    <input type="text" name="" id="abc">
+
+    <button onclick="push()">Add Student at last</button> 
+    <button onclick="unshift()">Add Student at first</button> 
+    <button onclick="sort()">Sort by A-Z</button>
+    <button onclick="reverse()">Sort by Z-A</button>    
+    <button onclick="pop()">Remove last Student</button>
+    <button onclick="shift()">Remove first Student</button>
+    <br><br>
+
+ 
+    <script>
+        var list = [" Kumar", " Mathan", " Harish"];
+        document.getElementById("g").innerHTML = list;
+         
+        function push() {
+            adding = document.getElementById('abc').value;
+            list.push(adding);
+            document.getElementById("g").innerHTML = list;
+        }   
+        
+        function unshift() {
+            adding = document.getElementById('abc').value;
+            list.unshift(adding);
+            document.getElementById("g").innerHTML = list;
+        }   
+        
+        function sort() {
+            list.sort();
+            document.getElementById("g").innerHTML = list;
+        }
+
+        function reverse() {
+            list.reverse();
+            document.getElementById("g").innerHTML = list;
+        }
+
+        function pop() {
+            list.pop();
+            document.getElementById("g").innerHTML = list;
+        }
+
+        function shift() {
+            list.shift();
+            document.getElementById("g").innerHTML = list;
+        }
+
+ 
+
+    </script>
+</body>
+</html>
